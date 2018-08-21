@@ -23,3 +23,7 @@
 .snake {
     -fx-background-color: slateblue;
 }
+
+.snake.head {
+    -fx-background-color: black;
+}

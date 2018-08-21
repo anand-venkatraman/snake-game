@@ -17,6 +17,7 @@ import javafx.scene.layout.GridPane;
 
 import java.util.*;
 
+import static com.google.common.collect.Iterables.get;
 import static com.google.common.collect.Lists.newArrayList;
 
 /**
@@ -81,6 +82,7 @@ public class SnakeController {
                     snakePos.forEach(pos -> labels.get(pos).getStyleClass().clear());
                     timerStatus.getSnakePositions().forEach(pos -> labels.get(pos).getStyleClass().add("snake"));
                     labels.get(timerStatus.getFoodPosition()).getStyleClass().add("food");
+                    labels.get(get(timerStatus.getSnakePositions(), 0)).getStyleClass().add("head");
                     snakePos.clear();
                     snakePos.addAll(timerStatus.getSnakePositions());
                 }
