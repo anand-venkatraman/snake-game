@@ -1,0 +1,25 @@
+.root {
+    -fx-background-color: palegoldenrod;
+}
+
+#status {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    
+}
+
+#snakeGrid {
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+}
+
+.food {
+    -fx-background-color: red;
+}
+
+.snake {
+    -fx-background-color: slateblue;
+}
